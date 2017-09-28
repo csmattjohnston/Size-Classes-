@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Size_classes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7t-ea-yCX">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bigger is better" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekk-5e-QOw">
+                                        <rect key="frame" x="346" y="15" width="332" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes it is" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goz-Va-2ZK">
+                                        <rect key="frame" x="483" y="83" width="58" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.69606482569999995" blue="0.28885855589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="goz-Va-2ZK" firstAttribute="top" secondItem="ekk-5e-QOw" secondAttribute="bottom" constant="8" id="43c-AS-vIi"/>
+                                    <constraint firstItem="ekk-5e-QOw" firstAttribute="top" secondItem="f7t-ea-yCX" secondAttribute="top" constant="15" id="NV0-Sf-4QZ">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="51" id="OwI-VC-sWp">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
+                                    <constraint firstItem="ekk-5e-QOw" firstAttribute="centerX" secondItem="f7t-ea-yCX" secondAttribute="centerX" id="X03-FI-O1q"/>
+                                    <constraint firstItem="goz-Va-2ZK" firstAttribute="centerX" secondItem="f7t-ea-yCX" secondAttribute="centerX" id="xSe-Qq-dsz"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="goz-Va-2ZK"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="subviews">
+                                        <include reference="goz-Va-2ZK"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jns-Ny-bPR">
+                                <rect key="frame" x="0.0" y="150" width="1024" height="1216"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cR1-j8-kGi">
+                                        <rect key="frame" x="0.0" y="28" width="1024" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cR1-j8-kGi" id="Jlf-ef-A2g">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jns-Ny-bPR" secondAttribute="trailing" id="2Gv-Px-Jk9"/>
+                            <constraint firstItem="Jns-Ny-bPR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6eV-Ai-HB6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jns-Ny-bPR" secondAttribute="bottom" id="PP3-Kd-ECh"/>
+                            <constraint firstItem="f7t-ea-yCX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UbT-3y-PHN"/>
+                            <constraint firstItem="f7t-ea-yCX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="W4K-qg-Ggb"/>
+                            <constraint firstItem="Jns-Ny-bPR" firstAttribute="top" secondItem="f7t-ea-yCX" secondAttribute="bottom" id="YIq-fy-aik"/>
+                            <constraint firstAttribute="trailing" secondItem="f7t-ea-yCX" secondAttribute="trailing" id="miy-p8-ZQ8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-77.34375" y="138.36017569546118"/>
+        </scene>
+    </scenes>
+</document>
